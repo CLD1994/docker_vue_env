@@ -37,7 +37,7 @@ RUN	mkdir $HOME/esp && \
 	curl -fsSLO --compressed "https://dl.espressif.com/dl/xtensa-esp32-elf-linux64-1.22.0-80-g6c4433a-5.2.0.tar.gz" && \
 	tar -xzf xtensa-esp32-elf-linux64-1.22.0-80-g6c4433a-5.2.0.tar.gz && \
 	rm xtensa-esp32-elf-linux64-1.22.0-80-g6c4433a-5.2.0.tar.gz && \
-	git clone -b v1.0-22-g40c38ef --recursive https://github.com/espressif/esp-adf.git && \
+	git clone -b v1.0 --recursive https://github.com/espressif/esp-adf.git && \
 	python2.7 -m pip install --user -r $IDF_PATH/requirements.txt
 
 WORKDIR $HOME/esp
